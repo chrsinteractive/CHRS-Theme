@@ -1,0 +1,75 @@
+/*
+Theme Name:     chrs
+Theme URI:		    http://www.chrsinteractive.com/
+Description:	   CHRS WP-Theme
+Version:		      1.0
+Author:			      CHRS Interactive
+Author URI:	    http://www.chrsinteractive.com/
+*/
+
+/* ---------------------------- */
+
+/* -- @MASTERHEAD/NAVIGATION -- */
+header {width:100%;position:fixed;top:0;left:0;padding:10px 0;z-index:9999;background:rgba(255,255,255,0.5);-moz-transition: background 0.3s;-ms-transition: background 0.3s;-o-transition: background 0.3s;transition: background 0.3s;}
+header.sticky {background:rgba(255,255,255,1);}
+
+.logo {display:block;margin:0;float:left;}
+
+/* Main Menu */
+.mainNav {background:#417C3B;text-align:center;position:relative;}
+.mainNav li {display:inline-block;border-bottom:2px solid #417C3B;}
+.mainNav li a {display:inline-block;padding:10px 20px;font:16px/1 'Open Sans', sans-serif;color:#fff;text-transform:uppercase;}
+.mainNav li:hover {border-bottom:2px solid #f8a035;}
+.mainNav li.current-menu-item a {background:#5B9340;border-bottom:2px solid #f8a035;}
+
+/* Level 2 */
+.mainNav li ul {display:none;}
+.mainNav li:hover > ul {display: block;}
+.mainNav ul {position: absolute; top: 100%;padding:10px 0;width:100%;max-width:270px;text-align:left;z-index:99;background:#fff;-webkit-box-shadow: 5px 5px 10px 0px rgba(66,65,66,1);
+-moz-box-shadow: 5px 5px 10px 0px rgba(66,65,66,1);
+box-shadow: 5px 5px 10px 0px rgba(66,65,66,1);}
+.mainNav ul li {display:block;float: none;position:relative;margin:0;height:auto;border:none;}
+.mainNav ul li:hover {border:none;}
+.mainNav ul li a {float:none;color:#444 !important;padding:0 10px;height:35px;line-height:35px;}
+.mainNav ul li a:hover {color:#fff !important;border:none;background:#417C3B;}
+.mainNav ul li.menu-item-has-children a {position:relative;}
+.mainNav ul li.menu-item-has-children a:before {position:absolute;font-family: FontAwesome;font-size:12px;top:0;right:5px;content: "\f054";}
+
+/* Level 3 */
+.mainNav ul li ul {position:absolute;width:100%;top:0;left:100%;padding:0;background:#eaeaea;-webkit-box-shadow: 5px 5px 10px 0px rgba(66,65,66,1);-moz-box-shadow: 5px 5px 10px 0px rgba(66,65,66,1);box-shadow: 5px 5px 10px 0px rgba(66,65,66,1);}
+.mainNav ul li.menu-item-has-children ul li a:before {display:none;}
+
+/* Responsive Menu */
+.mainNav {display:none;}
+nav.mobile {display:block;}
+#showLeft { display:block;float:right; margin:10px 10px 0 0;font-size: 28px; color: #fff; border: none; cursor: pointer; background:none; text-align: center; }
+.close-nav {display:none;}
+.cbp-spmenu { display: block; background: #3EBEB7; position: fixed }
+.cbp-spmenu h3 { color: #fff; font-size: 1.9em; padding: 20px 20px 20px 10px; margin: 0;}
+.cbp-spmenu a { display: block; color: #fff; font-size: 14px; line-height: 1.2;text-decoration: none;border-bottom: 1px solid #001c67; padding: 10px }
+.cbp-spmenu li.current-menu-item a, .cbp-spmenu a:hover {background:#001c67; }
+.cbp-spmenu-vertical { width: 240px; height: 100%; top: 0; z-index: 1000 }
+.cbp-spmenu-left { left: -240px }
+.cbp-spmenu-left.cbp-spmenu-open { left: 0 }
+.cbp-spmenu { -webkit-transition: all .3s linear; -moz-transition: all .3s linear; transition: all .3s linear }
+
+
+/* -- @CONTENT ---------------- */
+
+
+
+/* -- @BLOG ------------------- */
+
+
+
+
+/* -- @FOOTER ----------------- */
+
+
+
+/* #Clearer
+================================================== */
+.clearer:after,
+.container:after,
+.row:after,
+.mainNav:after {content: ""; display: table; clear: both;}
